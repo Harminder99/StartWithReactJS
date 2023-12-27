@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="row">
       <div className="col-lg-8 mx-auto">
-        <Products></Products>
+        <ul className="list-group shadow">
+          {[...Array(10).keys()].map((el) => {
+            return <Products></Products>;
+          })}
+        </ul>
       </div>
     </div>
   );
